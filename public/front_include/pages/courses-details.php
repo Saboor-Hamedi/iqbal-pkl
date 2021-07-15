@@ -22,7 +22,7 @@
     <!-- inner page banner END -->
     <div class="content-block">
         <!-- start details -->
-        <?php $read_id = isset($_GET['read']) ?  $_GET['read'] : "<h1>Post not found</h1>"; ?>
+        <?php $read_id = isset($_GET['read']) ?  $_GET['read'] : NULL; ?>
         <?php if (isset($_GET['read'])) : ?>
             <?php
             $sql = "SELECT * FROM users INNER JOIN profiles ON users.id=profiles.user_id  INNER JOIN posts ON users.id=posts.author_id WHERE posts.id  = {$hash->unhash($read_id)} ";

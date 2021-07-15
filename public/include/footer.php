@@ -33,6 +33,7 @@
 <script src="/app/ajax/join_event.js"></script>
 <script src="/app/ajax/upload_event_payment.js"></script>
 <script src="/app/ajax/approve_event_payment.js"></script>
+<script src="/app/ajax/profile_edit.js"></script>
 
 <!-- modal.upload_purchase_image, this is the payment receipt -->
 <!-- e -->
@@ -112,6 +113,11 @@
     });
 
   });
+// accept only number
+var inputBox = $('#age').on('input', function(e) {
+  e.preventDefault();
+  $(this).val($(this).val().replace(/[^0-9]/g, ''));
+});
 </script>
 </body>
 

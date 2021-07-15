@@ -24,6 +24,9 @@ $sold_course = $posts->fetch_payments();
 $join_event = $posts->join_event();
 $join_table_3 = $posts->joinTables();
 $fetch_profile_by_id = $posts->fetchById('profiles', $user_id);
+
+$profile = $posts->profile($user_id); 
+
 // ===============Helper=====================
 $helper = new Helper();
 

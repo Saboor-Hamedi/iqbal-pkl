@@ -64,13 +64,21 @@ if (
                         <span class="ttr-label">Your events</span>
                     </a>
                 </li>
-                
+                <?php if ($_SESSION['user_role_id'] == 0) : ?>
+                    <li>
+                        <a href="certificates.php" class="ttr-material-button">
+                            <span class="ttr-icon"><i class="ti-user"></i></span>
+                            <span class="ttr-label">Certificates</span>
+                        </a>
+                    </li>
+                <?php endif; ?>
                 <li>
                     <a href="profile.php" class="ttr-material-button">
                         <span class="ttr-icon"><i class="ti-user"></i></span>
                         <span class="ttr-label">My Profile</span>
                     </a>
                 </li>
+
                 <li class="ttr-seperate"></li>
             </ul>
             <!-- sidebar menu end -->

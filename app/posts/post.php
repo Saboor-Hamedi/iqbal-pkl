@@ -108,6 +108,15 @@ class Post
         }
     }
 
+    public function profile($id)
+    {
+        $sql = "SELECT * FROM users LEFT JOIN profiles ON users.id=profiles.user_id WHERE users.id = ? ";
+        $stmt = $this->db->getMyDB()->prepare($sql);
+        $stmt->execute([$id]);
+        $data = $stmt->fetchAll();
+        return $data;
+    }
+
     // insert new post
     public function register($posts)
     {

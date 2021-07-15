@@ -46,17 +46,6 @@
 					</a>
 				</li>
 
-
-
-
-
-				<li>
-					<a href="#" class="ttr-material-button">
-						<span class="ttr-icon"><i class="ti-user"></i></span>
-						<span class="ttr-label">My Profile</span>
-					</a>
-
-				</li>
 				<li>
                     <a href="profile.php" class="ttr-material-button">
                         <span class="ttr-icon"><i class="ti-user"></i></span>
