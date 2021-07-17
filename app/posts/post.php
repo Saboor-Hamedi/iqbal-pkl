@@ -76,7 +76,7 @@ class Post
     {
         try {
             $sql = "
-            SELECT * FROM event INNER  JOIN  join_event ON event.event_id=join_event.join_event_id 
+               SELECT * FROM event INNER  JOIN  join_event ON event.event_id=join_event.join_event_id 
                 INNER JOIN users ON join_event.user_id=users.id ORDER BY event.event_status  ASC
             ";
             $stmt = $this->db->getMyDB()->prepare($sql);

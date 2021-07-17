@@ -29,7 +29,7 @@
             <div class="container clearfix">
                 <!-- Header Logo ==== -->
                 <div class="menu-logo">
-                    <a href="/"><img src="/public/admin/assets/images/logo-white.png" alt=""></a>
+                    <a href="/"><img src="/public/assets/images/logo.png" style="width: 80px;"></a>
                 </div>
                 <!-- Mobile Nav Button ==== -->
                 <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +67,7 @@
                             <a href="/">Home</a>
                         </li>
                         <li>
-                            <a href="javascript:void(0);">Pages
+                            <a href="javascript:void(0);">Training
                                 <i class="fa fa-chevron-down">
                                 </i>
                             </a>

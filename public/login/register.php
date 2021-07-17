@@ -49,7 +49,7 @@ if (isset($_POST['submit'])) {
                 $stmt = $con->prepare($sql);
                 $data = $stmt->execute([$name, $email, $password]);
                 if ($stmt->rowCount()) {
-                    $successMessage = '<div class="alert alert-success" role="alert">New user created, <a href="login">Login</a></div>';
+                    $successMessage = '<div class="alert alert-success" role="alert">New user created, <a href="/public/login/login.php">Login</a></div>';
                 } else {
                     $successMessage = '<div class="alert alert-success" role="alert">User not created</div>';
                 }

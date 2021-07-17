@@ -4,7 +4,7 @@
                 <div class="container">
                     <div class="d-flex align-items-stretch">
                         <div class="pt-logo mr-auto">
-                            <a href="index.html"><img src="/public/admin/assets/images/logo-white.png" alt="" /></a>
+                            <a href="javascript:void(0);"><img src="/public/assets/images/logo.png" width="100"/></a>
                         </div>
                         <div class="pt-social-link">
                             <ul class="list-inline m-a0">
@@ -14,9 +14,7 @@
                                 <li><a href="#" class="btn-link"><i class="fa fa-google-plus"></i></a></li>
                             </ul>
                         </div>
-                        <div class="pt-btn-join">
-                            <a href="#" class="btn ">Join Now</a>
-                        </div>
+                      
                     </div>
                 </div>
             </div>
@@ -45,10 +43,10 @@
                                 <div class="widget footer_widget">
                                     <h5 class="footer-title">Company</h5>
                                     <ul>
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about-1.html">About</a></li>
-                                        <li><a href="faq-1.html">FAQs</a></li>
-                                        <li><a href="contact-1.html">Contact</a></li>
+                                        <li><a href="javascript:void(0);">Home</a></li>
+                                        <li><a href="javascript:void(0);">About</a></li>
+                                        <li><a href="javascript:void(0);">FAQs</a></li>
+                                        <li><a href="javascript:void(0);">Contact</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -56,10 +54,10 @@
                                 <div class="widget footer_widget">
                                     <h5 class="footer-title">Get In Touch</h5>
                                     <ul>
-                                        <li><a href="http://educhamp.themetrades.com/admin/index.html">Dashboard</a></li>
-                                        <li><a href="blog-classic-grid.html">Blog</a></li>
-                                        <li><a href="portfolio.html">Portfolio</a></li>
-                                        <li><a href="event.html">Event</a></li>
+                                        <li><a href="javascript:void(0);">Dashboard</a></li>
+                                        <li><a href="javascript:void(0);">Blog</a></li>
+                                        <li><a href="javascript:void(0);">Portfolio</a></li>
+                                        <li><a href="javascript:void(0);">Event</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -67,10 +65,10 @@
                                 <div class="widget footer_widget">
                                     <h5 class="footer-title">Courses</h5>
                                     <ul>
-                                        <li><a href="courses.html">Courses</a></li>
-                                        <li><a href="courses-details.html">Details</a></li>
-                                        <li><a href="membership.html">Membership</a></li>
-                                        <li><a href="profile.html">Profile</a></li>
+                                        <li><a href="javascript:void(0);">Courses</a></li>
+                                        <li><a href="javascript:void(0);">Details</a></li>
+                                        <li><a href="javascript:void(0);">Membership</a></li>
+                                        <li><a href="javascript:void(0);">Profile</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -80,14 +78,14 @@
                         <div class="widget widget_gallery gallery-grid-4">
                             <h5 class="footer-title">Our Gallery</h5>
                             <ul class="magnific-image">
-                                <li><a href="/public/admin/assets/images/gallery/pic1.jpg" class="magnific-anchor"><img src="/public/admin/assets/images/gallery/pic1.jpg" alt=""></a></li>
-                                <li><a href="/public/admin/assets/images/gallery/pic2.jpg" class="magnific-anchor"><img src="/public/admin/assets/images/gallery/pic2.jpg" alt=""></a></li>
-                                <li><a href="/public/admin/assets/images/gallery/pic3.jpg" class="magnific-anchor"><img src="/public/admin/assets/images/gallery/pic3.jpg" alt=""></a></li>
-                                <li><a href="/public/admin/assets/images/gallery/pic4.jpg" class="magnific-anchor"><img src="/public/admin/assets/images/gallery/pic4.jpg" alt=""></a></li>
-                                <li><a href="/public/admin/assets/images/gallery/pic5.jpg" class="magnific-anchor"><img src="/public/admin/assets/images/gallery/pic5.jpg" alt=""></a></li>
-                                <li><a href="/public/admin/assets/images/gallery/pic6.jpg" class="magnific-anchor"><img src="/public/admin/assets/images/gallery/pic6.jpg" alt=""></a></li>
-                                <li><a href="/public/admin/assets/images/gallery/pic7.jpg" class="magnific-anchor"><img src="/public/admin/assets/images/gallery/pic7.jpg" alt=""></a></li>
-                                <li><a href="/public/admin/assets/images/gallery/pic8.jpg" class="magnific-anchor"><img src="/public/admin/assets/images/gallery/pic8.jpg" alt=""></a></li>
+                                <li><a href="/public/admin/assets/images/slider/slide1.jpg" class="magnific-anchor"><img src="/public/admin/assets/images/slider/slide1.jpg" alt=""></a></li>
+                                <li><a href="/public/admin/assets/images/slider/slide1.jpg" class="magnific-anchor"><img src="/public/admin/assets/images/slider/slide1.jpg" alt=""></a></li>
+                                <li><a href="/public/admin/assets/images/slider/slide1.jpg" class="magnific-anchor"><img src="/public/admin/assets/images/slider/slide1.jpg" alt=""></a></li>
+                                <li><a href="/public/admin/assets/images/slider/slide1.jpg" class="magnific-anchor"><img src="/public/admin/assets/images/slider/slide1.jpg" alt=""></a></li>
+                                <li><a href="/public/admin/assets/images/slider/slide2.jpg" class="magnific-anchor"><img src="/public/admin/assets/images/slider/slide2.jpg" alt=""></a></li>
+                                <li><a href="/public/admin/assets/images/slider/slide2.jpg" class="magnific-anchor"><img src="/public/admin/assets/images/slider/slide2.jpg" alt=""></a></li>
+                                <li><a href="/public/admin/assets/images/slider/slide2.jpg" class="magnific-anchor"><img src="/public/admin/assets/images/slider/slide2.jpg" alt=""></a></li>
+                                <li><a href="/public/admin/assets/images/slider/slide2.jpg" class="magnific-anchor"><img src="/public/admin/assets/images/slider/slide2.jpg" alt=""></a></li>
                             </ul>
                         </div>
                     </div>
@@ -97,7 +95,10 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 text-center"> <a target="_blank" href="https://www.templateshub.net">Templates Hub</a></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                         <a target="_blank" href="https://www.templateshub.net">
+                         NICT UIN JKT &copy; 2021</a>
+                        </div>
                 </div>
             </div>
         </div>

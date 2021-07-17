@@ -60,10 +60,6 @@ if (isset($_POST['submit'])) {
                         <span class="ttr-label">Courses</span>
                     </a>
                 </li>
-              
-               
-               
-                
                 <li>
                     <a href="profile.php" class="ttr-material-button">
                         <span class="ttr-icon"><i class="ti-user"></i></span>
@@ -89,7 +85,7 @@ if (isset($_POST['submit'])) {
                 <div class="col-lg-12 m-b30">
                     <div class="widget-box">
                         <div class="wc-title">
-                            <h4>Make event</h4>
+                            <h4>Make post</h4>
                         </div>
                       
                             <div class="widget-inner">

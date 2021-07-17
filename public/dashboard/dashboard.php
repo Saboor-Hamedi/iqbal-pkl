@@ -25,7 +25,7 @@ if (
         <!-- side menu logo start -->
         <div class="ttr-sidebar-logo">
             <a href="#">
-                <img alt="" src="/public/assets/images/logo.png" width="122" height="27">
+                <img alt="" src="/public/assets/images/logo.png" width="70" height="27">
             </a>
             <div class="ttr-sidebar-toggle-button">
                 <i class="ti-arrow-left"></i>
