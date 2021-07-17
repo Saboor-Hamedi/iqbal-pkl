@@ -152,7 +152,7 @@ CREATE TABLE `posts` (
   PRIMARY KEY (`id`),
   KEY `author_id` (`author_id`),
   CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`author_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -161,7 +161,7 @@ CREATE TABLE `posts` (
 
 LOCK TABLES `posts` WRITE;
 /*!40000 ALTER TABLE `posts` DISABLE KEYS */;
-INSERT INTO `posts` VALUES (1,'Where does it come from?','Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\r\n\r\n',1,'1626163479296537036.jpg',10,'2021-07-13 08:04:39');
+INSERT INTO `posts` VALUES (1,'Where does it come from?','Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\r\n\r\n',1,'1626163479296537036.jpg',10,'2021-07-13 08:04:39'),(2,'IT and engineering','Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\r\n\r\n',2,'1626163479296537036.jpg',100,'2021-07-13 08:04:39'),(3,'Developing','Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\r\n\r\n',1,'1626163479296537036.jpg',150,'2021-07-13 08:04:39'),(4,'Online banking','Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\r\n\r\n',12,'1626163479296537036.jpg',50,'2021-07-13 08:04:39');
 /*!40000 ALTER TABLE `posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -183,7 +183,7 @@ CREATE TABLE `profiles` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `user_id` (`user_id`),
   CONSTRAINT `profiles_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -192,7 +192,7 @@ CREATE TABLE `profiles` (
 
 LOCK TABLES `profiles` WRITE;
 /*!40000 ALTER TABLE `profiles` DISABLE KEYS */;
-INSERT INTO `profiles` VALUES (1,'Write your bio!',NULL,20,'Write your study level!',NULL,1),(2,'Write your bio!',NULL,20,'Write your study level!',NULL,2),(3,'Write your bio!',NULL,20,'Write your study level!',NULL,12);
+INSERT INTO `profiles` VALUES (1,'I am software developer','Afghanistan',27,'I am software engineer and UI developer','16262401122009755113.jpeg',1),(2,'Write your bio!',NULL,20,'I am still a student',NULL,2),(3,'Write your bio!',NULL,20,'I am a programmer',NULL,12),(4,'Write your bio!',NULL,20,'Write your study level!',NULL,13),(5,'Write your bio!',NULL,20,'Write your study level!',NULL,14);
 /*!40000 ALTER TABLE `profiles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -207,15 +207,13 @@ CREATE TABLE `users` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `email` varchar(250) NOT NULL,
-  `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(255) NOT NULL,
-  `remember_token` varchar(100) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `role_id` tinyint(1) DEFAULT 1,
   `status` tinyint(1) NOT NULL DEFAULT 1,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -224,7 +222,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Iqbal','iqbal@gmail.com',NULL,'$2y$10$txaWq9k3Cu4LPKaAjofzlud.jxTKOr9WBYtYnc4mrhdjmbhV/yFke',NULL,NULL,0,1),(2,'Guest','guest@gmail.com',NULL,'$2y$10$ffmrJ8eCxwWn7K4qywSOiuSRAagMdWSyRRsSmVnHTvqKGeqbBM0cC',NULL,NULL,1,1),(12,'asdf','guest1@gmail.com',NULL,'$2y$10$Cld7sCV7vDW4GMGJuSy7K.ehyHvRtIu/wW0NLKIyysHD/NDdk75bK',NULL,NULL,1,1);
+INSERT INTO `users` VALUES (1,'Iqbal','iqbal@gmail.com','$2y$10$txaWq9k3Cu4LPKaAjofzlud.jxTKOr9WBYtYnc4mrhdjmbhV/yFke',NULL,0,1),(2,'Guest','guest@gmail.com','$2y$10$ffmrJ8eCxwWn7K4qywSOiuSRAagMdWSyRRsSmVnHTvqKGeqbBM0cC',NULL,1,1),(12,'asdf','guest1@gmail.com','$2y$10$Cld7sCV7vDW4GMGJuSy7K.ehyHvRtIu/wW0NLKIyysHD/NDdk75bK',NULL,1,1),(13,'test','test@gmail.com','$2y$10$PkwloXr3drsCgjvA6Mnuh.2MVu7X0SjwxeoxhLOIAMUb.Gwcdfyt.',NULL,1,1),(14,'new','new@gmail.com','$2y$10$z8ScUgoQ9UMg6PtImU2trutnhceLFEJefHNTGK8F5TTWlNSst4XZe',NULL,1,1);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -259,4 +257,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-13  4:10:02
+-- Dump completed on 2021-07-17  5:17:22
